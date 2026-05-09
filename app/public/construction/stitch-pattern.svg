@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Stitch Pattern">
+<defs><pattern id="sp-0" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#000" stroke-opacity="0.30" stroke-width="2.5"/>
+    </pattern><pattern id="sp-1" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#000" stroke-opacity="0.30" stroke-width="2.5"/>
+    </pattern><pattern id="sp-2" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(90)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#000" stroke-opacity="0.30" stroke-width="2.5"/>
+    </pattern><pattern id="sp-3" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#000" stroke-opacity="0.30" stroke-width="2.5"/>
+    </pattern><pattern id="sp-4" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(60)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#000" stroke-opacity="0.30" stroke-width="2.5"/>
+    </pattern><pattern id="sp-5" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#000" stroke-opacity="0.30" stroke-width="2.5"/>
+    </pattern><pattern id="sp-6" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(90)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#000" stroke-opacity="0.30" stroke-width="2.5"/>
+    </pattern></defs><rect x="0" y="0" width="800" height="114.28571428571429" fill="#7a8c2e"/><rect x="0" y="0" width="800" height="114.28571428571429" fill="url(#sp-0)"/><rect x="0" y="114.28571428571429" width="800" height="114.28571428571429" fill="#a85a2a"/><rect x="0" y="114.28571428571429" width="800" height="114.28571428571429" fill="url(#sp-1)"/><rect x="0" y="228.57142857142858" width="800" height="114.28571428571429" fill="#c83e3e"/><rect x="0" y="228.57142857142858" width="800" height="114.28571428571429" fill="url(#sp-2)"/><rect x="0" y="342.8571428571429" width="800" height="114.28571428571429" fill="#a3568b"/><rect x="0" y="342.8571428571429" width="800" height="114.28571428571429" fill="url(#sp-3)"/><rect x="0" y="457.14285714285717" width="800" height="114.28571428571429" fill="#5a8c3a"/><rect x="0" y="457.14285714285717" width="800" height="114.28571428571429" fill="url(#sp-4)"/><rect x="0" y="571.4285714285714" width="800" height="114.28571428571429" fill="#e8501c"/><rect x="0" y="571.4285714285714" width="800" height="114.28571428571429" fill="url(#sp-5)"/><rect x="0" y="685.7142857142858" width="800" height="114.28571428571429" fill="#1a4a2c"/><rect x="0" y="685.7142857142858" width="800" height="114.28571428571429" fill="url(#sp-6)"/>
+</svg>

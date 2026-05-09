@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Sand">
+  <defs>
+    <radialGradient id="gc7" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#ecdcc5"/>
+      <stop offset="60%" stop-color="#e8d4b8"/>
+      <stop offset="100%" stop-color="#b5a590"/>
+    </radialGradient>
+    <pattern id="wc7" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#b5a590" stroke-opacity="0.25" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="w2c7" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#ecdcc5" stroke-opacity="0.30" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#gc7)"/>
+  <rect width="100%" height="100%" fill="url(#wc7)"/>
+  <rect width="100%" height="100%" fill="url(#w2c7)"/>
+</svg>

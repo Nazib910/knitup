@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Pine">
+  <defs>
+    <radialGradient id="gc44" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#456b52"/>
+      <stop offset="60%" stop-color="#1c4a2c"/>
+      <stop offset="100%" stop-color="#163a22"/>
+    </radialGradient>
+    <pattern id="wc44" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#163a22" stroke-opacity="0.25" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="w2c44" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#456b52" stroke-opacity="0.30" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#gc44)"/>
+  <rect width="100%" height="100%" fill="url(#wc44)"/>
+  <rect width="100%" height="100%" fill="url(#w2c44)"/>
+</svg>

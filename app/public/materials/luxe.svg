@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="luxe fabric swatch">
+  <defs>
+    <radialGradient id="g-luxe" cx="35%" cy="30%" r="85%">
+      <stop offset="0%"  stop-color="#fff8eb" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#ece2cf"      stop-opacity="1"/>
+      <stop offset="100%" stop-color="#b6a98a"   stop-opacity="1"/>
+    </radialGradient>
+    <pattern id="weave-a-luxe" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#b6a98a" stroke-opacity="0.18" stroke-width="2"/>
+    </pattern>
+    <pattern id="weave-b-luxe" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#fff8eb" stroke-opacity="0.22" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="vignette-luxe" cx="50%" cy="55%" r="75%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-luxe)"/>
+  <rect width="100%" height="100%" fill="url(#weave-a-luxe)"/>
+  <rect width="100%" height="100%" fill="url(#weave-b-luxe)"/>
+  <rect width="100%" height="100%" fill="url(#vignette-luxe)"/>
+</svg>

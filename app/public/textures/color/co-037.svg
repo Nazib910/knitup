@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Mist">
+  <defs>
+    <radialGradient id="gc36" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#dce6f7"/>
+      <stop offset="60%" stop-color="#d4e0f5"/>
+      <stop offset="100%" stop-color="#a5afbf"/>
+    </radialGradient>
+    <pattern id="wc36" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#a5afbf" stroke-opacity="0.25" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="w2c36" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#dce6f7" stroke-opacity="0.30" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#gc36)"/>
+  <rect width="100%" height="100%" fill="url(#wc36)"/>
+  <rect width="100%" height="100%" fill="url(#w2c36)"/>
+</svg>

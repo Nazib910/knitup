@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Moss">
+  <defs>
+    <radialGradient id="gc45" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#365042"/>
+      <stop offset="60%" stop-color="#0a2a18"/>
+      <stop offset="100%" stop-color="#082113"/>
+    </radialGradient>
+    <pattern id="wc45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#082113" stroke-opacity="0.25" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="w2c45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#365042" stroke-opacity="0.30" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#gc45)"/>
+  <rect width="100%" height="100%" fill="url(#wc45)"/>
+  <rect width="100%" height="100%" fill="url(#w2c45)"/>
+</svg>
