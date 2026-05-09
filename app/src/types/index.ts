@@ -45,6 +45,9 @@ export interface Material {
   swatchUrl: string;
   description: string;
   colorMode: '5-Color Jacquard' | '3-Color Jacquard' | '2-Color Stitch';
+  /** Per-tier 3D preview hints — drives mesh look on the Material step. */
+  baseColorHex: string;
+  roughness: number; // 0..1 (lower = silkier)
 }
 
 export interface Construction {

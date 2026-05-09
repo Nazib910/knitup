@@ -29,6 +29,9 @@ test-results/
 # Vercel
 .vercel/
 
+# Local agent / IDE config
+.rovodev/
+
 # Logs
 *.log
 logs/

@@ -13,6 +13,9 @@ const GarmentScene = lazy(() =>
 );
 
 // Routes that render WITH a 3D canvas behind them.
+// Mirrors knitup.io: the persistent <Canvas/> only appears once the user
+// reaches the Stitch step. Material and Construction are catalogue-style
+// pickers (no live preview) — matches the real product exactly.
 const SCENE_ROUTES = new Set([
   '/design/stitch',
   '/design/gauge',

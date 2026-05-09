@@ -48,16 +48,23 @@ export default function SilhouetteOverview() {
         <div className="col-span-12 lg:col-span-7">
           <motion.div
             layoutId={`silhouette-${data.uuid}`}
-            className="bg-knitup-bgSoft rounded-card flex items-center justify-center overflow-hidden"
-            style={{ aspectRatio: '1 / 1' }}
+            className="rounded-card flex items-center justify-center overflow-hidden"
+            style={{
+              aspectRatio: '1 / 1',
+              background:
+                'radial-gradient(120% 120% at 30% 20%, #ffffff 0%, #f4f1ec 60%, #e8e3d8 100%)',
+            }}
           >
             <motion.img
               src={data.thumbUrl}
               alt={data.name}
-              className="w-3/4 h-auto"
+              className="w-3/4 h-auto object-contain"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.645, 0.045, 0.355, 1] }}
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).style.display = 'none';
+              }}
             />
           </motion.div>
         </div>

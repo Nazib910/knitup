@@ -66,7 +66,7 @@ export const colors: Color[] = COLOR_PALETTE.map((c, i) => {
     uuid: `co-${num}`,
     name: c.name,
     hex: c.hex,
-    swatchUrl: `/textures/color/co-${num}.jpg`,
-    fabricTextureUrl: `/textures/color/co-${num}.jpg`,
+    swatchUrl: `/textures/color/co-${num}.svg`,
+    fabricTextureUrl: `/textures/color/co-${num}.svg`,
   };
 });

@@ -7,20 +7,20 @@ export const constructions: Construction[] = [
     label: 'Graphic Jacquard',
     description:
       'Incorporate your graphic design. Your image file will be knitted using a 12-Gauge Birdseye Jacquard stitch.',
-    imageUrl: '/construction/graphic-jacquard.jpg',
+    imageUrl: '/construction/graphic-jacquard.svg',
   },
   {
     key: 'stitchPattern',
     label: 'Stitch Pattern',
     description:
       'Pick from a variety of stitch constructions, such as cable, tuck, needle transfer, half cardigan and many more. The selected stitch will be knitted in solid colors.',
-    imageUrl: '/construction/stitch-pattern.jpg',
+    imageUrl: '/construction/stitch-pattern.svg',
   },
   {
     key: 'embroidery',
     label: 'Embroidery',
     description:
       'Pick from a variety of stitch constructions that support embroidery and knitted in solid colors. Make that distinctive mark to add premium and unique touches to your collection with embroidery.',
-    imageUrl: '/construction/embroidery.jpg',
+    imageUrl: '/construction/embroidery.svg',
   },
 ];

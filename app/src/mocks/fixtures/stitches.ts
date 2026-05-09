@@ -14,8 +14,8 @@ export const stitches: Stitch[] = STITCH_NAMES.map((name, i) => {
   return {
     uuid: `st-${num}`,
     name,
-    swatchUrl: `/textures/stitch/st-${num}.jpg`,
-    textureUrl: `/textures/stitch/st-${num}.jpg`,
+    swatchUrl: `/textures/stitch/st-${num}.svg`,
+    textureUrl: `/textures/stitch/st-${num}.svg`,
     repeat: { u: 8, v: 8 },
   };
 });

@@ -19,9 +19,16 @@ export function GarmentMesh() {
   const groupRef = useRef<THREE.Group>(null);
   const materialRef = useRef<THREE.MeshStandardMaterial>(null);
   const color = useSceneStore((s) => s.color);
+  const materialBaseColor = useSceneStore((s) => s.materialBaseColor);
+  const materialRoughness = useSceneStore((s) => s.materialRoughness);
+  const materialTextureUrl = useSceneStore((s) => s.materialTextureUrl);
   const stitchTextureUrl = useSceneStore((s) => s.stitchTextureUrl);
   const uvRepeat = useSceneStore((s) => s.uvRepeat);
   const navigate3d = useSceneStore((s) => s.navigate3d);
+
+  // The visible color = picked color (if any) overlayed on the material's
+  // own base. Stitch texture takes precedence; otherwise the material weave.
+  const activeTextureUrl = stitchTextureUrl ?? materialTextureUrl;
 
   // Smooth color transition (PRD §9 — 350 ms ease).
   useEffect(() => {
@@ -39,6 +46,41 @@ export function GarmentMesh() {
     });
   }, [color]);
 
+  // Tween the material's base color when no explicit color picked yet.
+  // Picking a Material on /design/material instantly nudges the mesh towards
+  // the new yarn's natural shade so the 3D preview is alive.
+  useEffect(() => {
+    if (!materialRef.current) return;
+    const target = new THREE.Color(materialBaseColor);
+    const current = materialRef.current.color.clone();
+    const obj = { t: 0 };
+    gsap.to(obj, {
+      t: 1,
+      duration: 0.45,
+      ease: 'power2.out',
+      onUpdate: () => {
+        materialRef.current?.color.copy(current).lerp(target, obj.t);
+      },
+    });
+  }, [materialBaseColor]);
+
+  // Tween roughness so cashmere visibly looks silkier than cotton.
+  useEffect(() => {
+    if (!materialRef.current) return;
+    const from = { r: materialRef.current.roughness };
+    gsap.to(from, {
+      r: materialRoughness,
+      duration: 0.45,
+      ease: 'power2.out',
+      onUpdate: () => {
+        if (materialRef.current) {
+          materialRef.current.roughness = from.r;
+          materialRef.current.needsUpdate = true;
+        }
+      },
+    });
+  }, [materialRoughness]);
+
   // Idle gentle rotation when Navigate 3D is OFF (subtle product showcase).
   useFrame((_, delta) => {
     if (!groupRef.current || navigate3d) return;
@@ -50,7 +92,7 @@ export function GarmentMesh() {
   // tripping suspense before a stitch is actually picked.
   return (
     <group ref={groupRef} position={[0, -0.4, 0]}>
-      <SharedMaterial materialRef={materialRef} textureUrl={stitchTextureUrl} repeat={uvRepeat} />
+      <SharedMaterial materialRef={materialRef} textureUrl={activeTextureUrl} repeat={uvRepeat} />
 
       {/* Body */}
       <mesh position={[0, 0.7, 0]}>
