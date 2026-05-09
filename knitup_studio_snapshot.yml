@@ -1,0 +1,66 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - img [ref=e7] [cursor=pointer]
+    - generic [ref=e9]:
+      - img [ref=e11] [cursor=pointer]
+      - img [ref=e14] [cursor=pointer]
+      - img [ref=e17] [cursor=pointer]
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - text: Silhouettes
+        - generic [ref=e25]:
+          - img [ref=e27] [cursor=pointer]
+          - textbox "Search" [ref=e29]
+      - generic [ref=e31]:
+        - strong [ref=e32]:
+          - paragraph [ref=e33]: Categories
+        - generic [ref=e34]:
+          - generic [ref=e35] [cursor=pointer]:
+            - radio "All" [ref=e37]
+            - generic [ref=e39]: All
+          - generic [ref=e42] [cursor=pointer]:
+            - radio "Women" [ref=e44]
+            - generic [ref=e46]: Women
+          - generic [ref=e47] [cursor=pointer]:
+            - radio "Women (Curve)" [ref=e49]
+            - generic [ref=e51]: Women (Curve)
+          - generic [ref=e52] [cursor=pointer]:
+            - radio "Men" [ref=e54]
+            - generic [ref=e56]: Men
+          - generic [ref=e57] [cursor=pointer]:
+            - radio "Unisex" [ref=e59]
+            - generic [ref=e61]: Unisex
+          - generic [ref=e62] [cursor=pointer]:
+            - radio "Babies & Kids" [ref=e64]
+            - generic [ref=e66]: Babies & Kids
+          - generic [ref=e67] [cursor=pointer]:
+            - radio "Accessories" [ref=e69]
+            - generic [ref=e71]: Accessories
+          - generic [ref=e72] [cursor=pointer]:
+            - radio "Petwear" [ref=e74]
+            - generic [ref=e76]: Petwear
+          - generic [ref=e77] [cursor=pointer]:
+            - radio "Homeware" [ref=e79]
+            - generic [ref=e81]: Homeware
+    - generic [ref=e82]:
+      - paragraph [ref=e85]: Men's Oversized Crew Neck Pullover
+      - paragraph [ref=e88]: Women's Round Neck Pullover
+      - paragraph [ref=e91]: Women's Drop Shoulder Cardigan (Curve)
+      - paragraph [ref=e94]: Unisex Hoodie
+      - paragraph [ref=e97]: Baby's Bodysuit
+      - paragraph [ref=e100]: Kid's V Neck Pullover
+      - paragraph [ref=e103]: Sling Bag
+      - paragraph [ref=e106]: Scarf
+      - paragraph [ref=e109]: Dog Hoodie
+      - paragraph [ref=e112]: Blanket
+      - paragraph [ref=e115]: Women's Slip Dress
+      - paragraph [ref=e118]: Women's Oversized Vest
+      - paragraph [ref=e121]: Women's Turtleneck Vest
+      - paragraph [ref=e124]: Women's One Shoulder Top
+      - paragraph [ref=e127]: Women's Fitted Halter Top
+      - paragraph [ref=e130]: Women's Round Neck Vest
+      - paragraph [ref=e133]: Women's Tank Top
+      - paragraph [ref=e136]: Women's Cropped Vest
+      - paragraph [ref=e139]: Women's Cropped Polo
+      - paragraph [ref=e142]: Women's Short Sleeve Tee

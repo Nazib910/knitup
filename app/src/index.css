@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS custom properties (PRD §5 design tokens) */
+:root {
+  --knitup-gray: #393939;
+  --knitup-lighter: #dedede;
+  --knitup-light: #b2b2b2;
+  --knitup-m-gray: #b5b5b5;
+  --knitup-bg: #ffffff;
+  --knitup-bg-soft: #f5f5f5;
+  --knitup-text: rgba(0, 0, 0, 0.65);
+  --knitup-accent: #393939;
+
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-display: 'NexaBold', 'Manrope', sans-serif;
+
+  --header-h: 88px;
+  --container-max: 1240px;
+  --gutter: 20px;
+  --sidebar-w: 248px;
+
+  --ease: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --dur-fast: 150ms;
+  --dur: 300ms;
+  --dur-slow: 500ms;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--knitup-text);
+  background: var(--knitup-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion respect (PRD §12) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
